@@ -1,0 +1,392 @@
+﻿<html>
+<head>
+        <title>Sudoku</title>
+      <link rel="stylesheet" type="text/css" href="Dem.css">
+ 
+     </head>
+    <body>
+        <div id="Wrapper">
+            <div id="Main">
+       <marquee behavior="scroll" scrollamount="12"><center><h1><font size="20">WELCOME TO SUDOKU</h1></br></center></marquee>
+                    <div id="Column1">
+                         <br>
+                        <br>
+                        
+                        <label># of Games:</label>
+                            <select id="difficulty">
+                                <option value="1">1000</option>
+                                <option value="2" selected="">5000</option>
+                                <option value="3">10000</option>
+                            </select>
+                        <a href="sol 5.htm"><input type="submit" value="SOLVE ANOTHER GAME" class="gameControls"></a>
+                        <br>
+                        <br>
+                      <br><br><br><br>
+<p><font color="orange" size="5"><b>INTRODUCTION</b></font><br>
+<font size="3">Sudoku is played on a grid of 9 x 9 spaces. Within the rows and columns are 9 “squares” (made up of 3 x 3 spaces).
+ Each row, column and square (9 spaces each) needs to be filled out with the numbers 1-9, without repeating any numbers within the row, column or square. 
+<a href="introduction.htm" target="blank_"><input type="submit" value="more..." class="gameControls"></a></font>
+</p>   
+                     
+                    </div>
+                   <div id="sudokuBoard">
+                        <table cellspacing="0" cellpadding="0">
+                            <tbody><tr>
+                                <td class="boardCellGroupA">
+                                    <table cellspacing="1" cellpadding="0">
+                                        <tbody><tr>
+                                            <td class="boardCell">
+                                                <div id="00" class="Value">2</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="01" class="Value">9</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="02" class="Value">5</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="boardCell">
+                                                <div id="10" class="staticValue">6</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="11" class="Value">8</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="12" class="staticValue">7</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="boardCell">
+                                                <div id="20" class="Value">3</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="21" class="staticValue">4</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="22" class="staticValue">1</div>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                                <td class="boardCellGroupB">
+                                    <table cellspacing="1" cellpadding="0">
+                                        <tbody><tr>
+                                            <td class="boardCell">
+                                                <div id="03" class="Value">1</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="04" class="Value">7</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="05" class="staticValue">3</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="boardCell">
+                                                <div id="13" class="Value">4</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="14" class="Value">5</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="15" class="staticValue">9</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="boardCell">
+                                                <div id="23" class="Value">6</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="24" class="Value">8</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="25" class="Value">2</div>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                                <td class="boardCellGroupA">
+                                    <table cellspacing="1" cellpadding="0">
+                                        <tbody><tr>
+                                            <td class="boardCell">
+                                                <div id="06" class="staticValue">6</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="07" class="staticValue">8</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="08" class="Value">4</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="boardCell">
+                                                <div id="16" class="Value">2</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="17" class="staticValue">1</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="18" class="Value">3</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="boardCell">
+                                                <div id="26" class="Value">9</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="27" class="Value">7</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="28" class="staticValue">5</div>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="boardCellGroupB">
+                                    <table cellspacing="1" cellpadding="0">
+                                        <tbody><tr>
+                                            <td class="boardCell">
+                                                <div id="30" class="staticValue">5</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="31" class="staticValue">2</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="32" class="Value">9</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="boardCell">
+                                                <div id="40" class="Value">4</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="41" class="Value">6</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="42" class="Value">8</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="boardCell">
+                                                <div id="50" class="Value">1</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="51" class="Value">7</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="52" class="Value">3</div>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                                <td class="boardCellGroupA">
+                                    <table cellspacing="1" cellpadding="0">
+                                        <tbody><tr>
+                                            <td class="boardCell">
+                                                <div id="33" class="Value">8</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="34" class="staticValue">1</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="35" class="Value">6</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="boardCell">
+                                                <div id="43" class="Value">3</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="44" class="Value">9</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="45" class="Value">7</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="boardCell">
+                                                <div id="53" class="Value">2</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="54" class="staticValue">4</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="55" class="Value">5</div>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                                <td class="boardCellGroupB">
+                                    <table cellspacing="1" cellpadding="0">
+                                        <tbody><tr>
+                                            <td class="boardCell">
+                                                <div id="36" class="staticValue">3</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="37" class="staticValue">4</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="38" class="staticValue">7</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="boardCell">
+                                                <div id="46" class="Value">1</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="47" class="Value">5</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="48" class="staticValue">2</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="boardCell">
+                                                <div id="56" class="Value">8</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="57" class="Value">9</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="58" class="Value">6</div>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="boardCellGroupA">
+                                    <table cellspacing="1" cellpadding="0">
+                                        <tbody><tr>
+                                            <td class="boardCell">
+                                                <div id="60" class="staticValue">7</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="61" class="Value">1</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="62" class="Value">6</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="boardCell">
+                                                <div id="70" class="Value">9</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="71" class="staticValue">3</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="72" class="staticValue">4</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="boardCell">
+                                                <div id="80" class="Value">8</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="81" class="Value">5</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="82" class="staticValue">2</div>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                                <td class="boardCellGroupB">
+                                    <table cellspacing="1" cellpadding="0">
+                                        <tbody><tr>
+                                            <td class="boardCell">
+                                                <div id="63" class="Value">5</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="64" class="Value">2</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="65" class="staticValue">8</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="boardCell">
+                                                <div id="73" class="Value">7</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="74" class="Value">6</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="75" class="Value">1</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="boardCell">
+                                                <div id="83" class="staticValue">9</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="84" class="Value">3</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="85" class="Value">4</div>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                                <td class="boardCellGroupA">
+                                    <table cellspacing="1" cellpadding="0">
+                                        <tbody><tr>
+                                            <td class="boardCell">
+                                                <div id="66" class="Value">4</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="67" class="staticValue">3</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="68" class="Value">9</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="boardCell">
+                                                <div id="76" class="Value">5</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="77" class="Value">2</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="78" class="Value">8</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="boardCell">
+                                                <div id="86" class="Value">7</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="87" class="Value">6</div>
+                                            </td>
+                                            <td class="boardCell">
+                                                <div id="88" class="Value">1</div>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                    <div id="Column2">
+                        <div class="gameControlSet">
+                         <a href="2.htm"><input type="submit" value="NEW GAME" class="gameControls"></a>
+                          <br><br>   <input type="submit" value="SOLVE" class="gameControls">
+                        </div><br>
+                            <input type="submit" class="gameControls" value="CHECK" onclick="showImage();"/>
+                           <img id="loadingImage" src="2.png" style="visibility:hidden"/>
+
+<script type="text/javascript">
+<!--
+    function showImage(){
+        document.getElementById('loadingImage').style.visibility='visible';
+    }
+    -->
+
+    </script>
+</div>
+</body></html>

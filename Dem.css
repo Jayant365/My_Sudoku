@@ -1,0 +1,218 @@
+﻿body
+{
+    margin: 0px;
+    padding: 0px;
+    background: #E10A04 url('10.png') 
+    repeat-x;
+    font-family: Arial;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+.bottomleft{
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 18px;
+}
+
+h1{
+
+  height: 100px;
+color: red;
+text-decoration: underline wavy red;
+text-align:center;
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 60s;
+  animation-name: example;
+  animation-duration: 60s;
+}
+
+@keyframes example {
+  5%   {color: red;}
+  10%  {color: pink;}
+  15%  {color: blue;}
+  20% {color: green;}
+  25%   {color: yellow;}
+  30%  {color: aqua;}
+  35%  {color: blueViolet;}
+  40% {color: chartreuse;}
+  45%  {color: crimson;}
+  50%  {color: DarkMagenta;}
+  55%   {color: DarkOrchid;}
+  60%  {color: DarkSlateBlue;}
+  65%  {color: DeepPink;}
+  70% {color: ForestGreen;}
+  75%   {color: Greenyellow;}
+  80%  {color: Hotpink;}
+  85%  {color: Indigo;}
+  90% {color: green;}
+  95%  {color: pink;}
+  100%  {color: blue;}
+}
+
+a
+{
+    color: #FFAEAE;
+
+}
+
+a:hover
+{
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+#Main
+{
+    width: 980px;
+    margin: 0 auto;
+}
+
+
+#Column1
+{
+    width: 300px;
+    float: left;
+}
+
+#sudokuBoard
+{
+    width: 426px;
+    margin-left: 40px;
+    float: left;
+    box-shadow: 0px 0px 30px #680301;
+    -moz-box-shadow: 0px 0px 30px #680301;
+    -webkit-box-shadow: 0 0 30px #680301;
+}
+
+#Column2
+{
+    width: 174px;
+    margin-left: 40px;
+    float: left;
+}
+
+
+td.boardCellGroupA,td.boardCellGroupB
+{
+    background-color: #940302;
+}
+
+td.boardCellGroupA td.boardCell
+{
+    width: 44px;
+    height: 44px;
+    border: 1px solid #EC0904;
+    background-color: #DA0603;
+}
+
+td.boardCellGroupB td.boardCell
+{
+    width: 44px;
+    height: 44px;
+    border: 1px solid #D40703;
+    background-color: #C40502;
+}
+
+.staticValue
+{
+    font-family: Segoe UI, Arial;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    color: #6C0000;
+}
+
+.staticValue,.editValue
+{
+    width: 42px;
+    height: 42px;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid #DA0603;
+}
+
+.editValue:hover
+{
+    background: #FFFFFF;
+}
+
+.Value
+{
+ font-family: Segoe UI, Arial;
+    font-size: 30px;
+    color: #FFFFFF;
+    width: 44px;
+    /*height: 44px;*/
+    padding: 0px;
+    border: 0px;
+    background: none !important;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    left: -1px;
+}
+
+label
+{
+    position: relative;
+    top: 3px;
+    line-height: 24px;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+select
+{
+    font-family: Arial;
+    color: #999999;
+    font-weight: normal;
+    font-size: 12px;
+    border-top: solid 1px #CCCCCC;
+    border-left: solid 1px #E2E3EA;
+    border-bottom: solid 1px #FFFFFF;
+    border-right: solid 1px #E2E3EA;
+    margin: 3px 0px;
+    min-width: 100px;
+    background: #FDFDFD;
+}
+
+
+
+.editValue input,.editValue
+{
+    font-family: Segoe UI, Arial;
+    font-size: 30px;
+    color: #FFFFFF;
+    width: 44px;
+    /*height: 44px;*/
+    padding: 0px;
+    border: 0px;
+    background: none !important;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    left: -1px;
+}
+
+input[type="submit"].gameControls
+{
+    font-family: Arial;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: 0px;
+    min-width: 28px;
+    min-height: 28px;
+ background-color: #E10A04;    
+margin: 8px 0px;
+    padding: 2px 16px;
+    cursor: pointer;
+}
+
+#rule{
+margin-left:150px;
+margin-right:150px;
+}
